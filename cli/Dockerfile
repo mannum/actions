@@ -9,7 +9,7 @@ LABEL "com.github.actions.description"="Wraps the Netlify CLI to enable common N
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="blue"
 
-RUN npm install --unsafe-perm=true -g netlify-cli
+RUN npm install --unsafe-perm=true -g netlify-cli@10.2.0
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
